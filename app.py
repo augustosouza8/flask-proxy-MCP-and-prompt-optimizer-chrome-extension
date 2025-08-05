@@ -25,7 +25,7 @@ def get_sse_params() -> SSEClientParams:
         headers={},            # add auth headers if needed
         timeout=300,            # seconds to establish connection
         sse_read_timeout=300,  # seconds between SSE events
-        timeout_seconds=300,  # hard setting the timeout to 300 given the following bug: https://github.com/agno-agi/agno/issues/3241
+        # timeout_seconds=300,  # hard setting the timeout to 300 given the following bug: https://github.com/agno-agi/agno/issues/3241
     )
 
 
