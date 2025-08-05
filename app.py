@@ -23,7 +23,7 @@ def get_sse_params() -> SSEClientParams:
     return SSEClientParams(
         url=_SSE_URL,
         headers={},            # add auth headers if needed
-        timeout=30,            # seconds to establish connection
+        timeout=300,            # seconds to establish connection
         sse_read_timeout=300,  # seconds between SSE events
     )
 
